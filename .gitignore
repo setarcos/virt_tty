@@ -1,0 +1,37 @@
+# Build artifacts
+*.o
+*.ko
+*.mod.c
+*.mod
+*.symvers
+*.order
+*.cmd
+.tmp_versions/
+
+# Kernel build output
+Module.symvers
+modules.order
+
+# Editor backups and temporary files
+*~
+.*.swp
+.*.swo
+*.bak
+*.tmp
+*.orig
+
+# Logs and debugging
+core
+core.*
+*.log
+
+# cscope and ctags
+cscope.*
+tags
+TAGS
+
+# Kconfig-related
+.config
+.config.old
+autoconf.h
+include/config/
