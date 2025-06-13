@@ -1,0 +1,1 @@
+KERNEL=="ttyVIRT*", SUBSYSTEM=="tty", MODE="0660", GROUP="dialout"
