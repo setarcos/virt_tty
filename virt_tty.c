@@ -32,6 +32,10 @@ static int virt_tty_install(struct tty_driver *driver, struct tty_struct *tty)
 
 static int virt_tty_open(struct tty_struct *tty, struct file *filp)
 {
+	int idx = tty->index;
+	struct tty_port *port = &port_array[idx];
+
+	tty_port_tty_set(port, tty);
 	return tty_port_open(&port_array[tty->index], tty, filp);
 }
 
